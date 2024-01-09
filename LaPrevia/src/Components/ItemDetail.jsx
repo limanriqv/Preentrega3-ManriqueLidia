@@ -1,14 +1,9 @@
-
-
-
-
-
 import React from 'react'
 import { Button } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import {useState , useContext} from 'react';
 import ItemCount from './ItemCount';
-import CartContext from './Context/CartContext';
+import CartContext from '../Context/CartContext';
 
 
 const ItemDetail = ({item}) => {

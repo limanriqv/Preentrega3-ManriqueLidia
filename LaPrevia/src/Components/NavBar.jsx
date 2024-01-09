@@ -1,6 +1,6 @@
 import React from 'react';
 import { useContext } from 'react';
-import { CartContext } from './Context/CartContext';
+import { CartContext } from '../Context/CartContext';
 import CartWidget from './CartWidget';
 import {Link,Image, Flex, Spacer, Box, Menu,MenuButton,MenuList,MenuItem,Button} from '@chakra-ui/react'
 import {ChevronDownIcon} from '@chakra-ui/icons'

@@ -1,7 +1,7 @@
 import React from 'react'
 import {useContext} from 'react'
 import {Button} from '@chakra-ui/react';
-import {CartContext} from './Context/CartContext';
+import {CartContext} from '../Context/CartContext';
 
 
 
