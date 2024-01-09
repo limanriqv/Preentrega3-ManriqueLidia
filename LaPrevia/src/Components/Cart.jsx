@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '@chakra-ui/react';
+import { Button, Box, Center } from '@chakra-ui/react';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import CartContext from '../Context/CartContext';
@@ -7,8 +7,10 @@ import CartContext from '../Context/CartContext';
 const Cart = () => {
     const { items, removeItem, clear } = useContext(CartContext);
 
-    return (<>
-        <div>Cart</div>
+    return (
+        <Center py={12} style={{margin: "10px"}}>
+        <Box>
+    
         {!items.length ? <h2> No tengo items <Link to="/"><Button> Ir al inicio</Button></Link></h2>:
             <>
             <ol>
@@ -20,7 +22,10 @@ const Cart = () => {
             <div>
                 <Button onClick={clear}>Limpiar carrito</Button>
             </div>
-        </>
+        </Box>
+
+        </Center>
+       
     )
 }
 

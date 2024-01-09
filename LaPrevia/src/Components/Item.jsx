@@ -20,7 +20,7 @@ import {
           p={6}
           maxW={'330px'}
           w={'full'}
-          bg={useColorModeValue('white', 'gray.800')}
+          bg={useColorModeValue('white', 'green.600')}
           boxShadow={'2xl'}
           rounded={'lg'}
           pos={'relative'}
@@ -58,14 +58,14 @@ import {
             </Link>
           </Box>
           <Stack pt={10} align={'center'}>
-            <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>
+            <Text color={'gray.600'} fontSize={'sm'} textTransform={'uppercase'}>
               id:{id}
             </Text>
-            <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
+            <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={400}>
               {title}
             </Heading>
             <Stack direction={'row'} align={'center'}>
-              <Text fontWeight={800} fontSize={'xl'}>
+              <Text fontWeight={700} fontSize={'xl'}>
                 ${price}
               </Text>
             </Stack>

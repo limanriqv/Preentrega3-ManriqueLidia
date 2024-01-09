@@ -13,13 +13,13 @@ const CartWidget = () => {
 
     <Button
     display={{ base: 'none', md: 'inline-flex' }}
-    fontSize={'sm'}
+    fontSize={'md'}
     fontWeight={600}
     color={'white'}
-    bg={'pink.400'}
+    bg={'black'}
     href={'#'}
     _hover={{
-      bg: 'pink.300',
+      bg: 'black.400',
     }}>
 
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-cart" viewBox="0 0 16 16">

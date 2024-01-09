@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '@chakra-ui/react';
+import { Button, Box, Center } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import {useState , useContext} from 'react';
 import ItemCount from './ItemCount';
@@ -23,14 +23,19 @@ const ItemDetail = ({item}) => {
     }
   
     return (
-      <div>
-        <h1>{title} - {id}</h1>
-        <img src={img}></img> 
-        <h3>{price}</h3> 
-        {counter !== 0 &&   //renderizado condicional
-          <Link to="/Cart"><Button>Finalizar compra</Button></Link> }
-          <ItemCount initial={1} stock={5} onAdd={onAdd} />
-      </div>
+
+      <Center py={12} style={{margin:"10px"}}>
+        <Box>
+          <h1 style={{marginLeft:"220px"}}>{title} - {id}</h1>
+          <img src={img}></img> 
+          <h2 style={{marginLeft:"320px"}}>{price}</h2> 
+          {counter !== 0 &&   //renderizado condicional
+            <Link to="/Cart"><Button  style={{marginLeft:"265px"}} >Finalizar compra</Button></Link>}
+            <ItemCount initial={1} stock={5} onAdd={onAdd} />
+      
+        </Box>
+      </Center>
+
     )
   }
   

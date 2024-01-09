@@ -11,17 +11,25 @@ import * as Router from 'react-router-dom'
 const NavBar = () => {
   return (
     <div>
-        <Flex>
+        <Flex bg='green.200'>
             <Router.Link to="/">
-                <Box p='4' bg='red.400'>
-                    La previa
+                <Box p='4' bg='green.200'>
+                <Image
+                    borderRadius='full'
+                    boxSize='75px'
+                    src='/img/logo.png'
+                    alt='Logo'
+                    
+                />
+                
+                   
                 </Box>
             </Router.Link>
             
             <Spacer />
 
             <Menu>
-                <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+                <MenuButton as={Button} rightIcon={<ChevronDownIcon />} bg='green.200' mt='20px'>
                 Categorías
                 </MenuButton>
                 <MenuList>
@@ -43,7 +51,7 @@ const NavBar = () => {
 
 
             <Router.Link to="/Cart">
-                <Box p='4' bg='green.400'>
+                <Box p='4' bg='green.200'>
                     <CartWidget/>
                 </Box>
             </Router.Link>
