@@ -30,7 +30,7 @@ const ItemDetail = ({item}) => {
           <img src={img}></img> 
           <h2 style={{marginLeft:"320px"}}>{price}</h2> 
           {counter !== 0 &&   //renderizado condicional
-            <Link to="/Cart"><Button  style={{marginLeft:"265px"}} >Finalizar compra</Button></Link>}
+            <Link to="/Cart"><Button  style={{marginLeft:"265px"}} >Ver carrito</Button></Link>}
             <ItemCount initial={1} stock={5} onAdd={onAdd} />
       
         </Box>
