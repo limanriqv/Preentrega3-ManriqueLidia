@@ -8,7 +8,7 @@ const Cart = () => {
     const { items, removeItem, clear } = useContext(CartContext);
 
     return (
-        <Center py={12} style={{margin: "10px"}}>
+        <>
         <Box>
     
         {!items.length ? <h2> No tengo items <Link to="/"><Button> Ir al inicio</Button></Link></h2>:
@@ -22,16 +22,15 @@ const Cart = () => {
             <div>
                 <Button onClick={clear}>Limpiar carrito</Button>
             </div>
-        </Box>
-        <Box>
+       
         <Link to="Checkout/">
             <Button> Finalizar compra</Button>
             </Link>
         </Box>
 
-       
+        </>
 
-        </Center>
+      
        
     )
 }

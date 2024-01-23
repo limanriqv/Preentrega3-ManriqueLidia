@@ -12,7 +12,7 @@ import {
   import {Link} from 'react-router-dom';
   
   
-  const Item = ({id, title, price, img,categoryid,stock}) =>  {
+  const Item = ({id, title, price, img}) =>  {
     return (
       <Center py={12} style={{margin: "10px"}}>
         <Box

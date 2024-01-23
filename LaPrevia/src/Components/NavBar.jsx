@@ -41,9 +41,6 @@ const NavBar = () => {
                         <MenuItem>Vinos</MenuItem>
                     </Router.Link>
 
-                    <Router.Link to={"/categoria/Promos"}>
-                        <MenuItem>Promos</MenuItem>
-                    </Router.Link>
                    
                 </MenuList>
             </Menu>

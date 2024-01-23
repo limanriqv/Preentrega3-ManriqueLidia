@@ -16,7 +16,7 @@ export const CartProvider= ({children}) =>{
             aux[itemIndex].quantity += quantity;
             setItems([...aux]);
         } else {
-            setItems([...items, { ...item, quantity }]);
+            setItems([...items, {...item, quantity }]);
         }
     }
 

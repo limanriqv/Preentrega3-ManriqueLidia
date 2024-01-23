@@ -4,7 +4,7 @@
 ### Alumna: Manrique Velazquez Lidia
 
 
-** Se nos solicito completar los siguientes puntos en nuestro Ecommerce. **
+* Se nos solicito completar los siguientes puntos en nuestro Ecommerce. *
 
 * NavBar
 * CartWidget

@@ -1,6 +1,6 @@
 import React from 'react';
 import Item from './Item';
-import { Flex } from '@chakra-ui/react';
+
 import { Grid , GridItem } from '@chakra-ui/react';
 
 const ItemList =({items}) => {
