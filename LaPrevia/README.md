@@ -22,6 +22,8 @@
 ## Titulo de mi Ecommerce: La previa
 
 * Gif donde se muestra como funciona:
+* 
+![Gif de LA_PREVIA](https://github.com/limanriqv/Preentrega3-ManriqueLidia/assets/65819827/d8e34222-f95a-4d8b-8399-4531c6e2180b)
 
 
 
