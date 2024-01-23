@@ -12,7 +12,7 @@ import {getFirestore} from 'firebase/firestore'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCh1DBXg8xO8KVkgEiF3xnBBXBTBg3rqgU",
+  apiKey: "process.env.API_KEY",
   authDomain: "laprevia-bar.firebaseapp.com",
   projectId: "laprevia-bar",
   storageBucket: "laprevia-bar.appspot.com",

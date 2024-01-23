@@ -1,3 +1,34 @@
+# Proyecto en React- Coderhouse
+
+# Entrega del trabajo final.
+### Alumna: Manrique Velazquez Lidia
+
+
+** Se nos solicito completar los siguientes puntos en nuestro Ecommerce. **
+
+* NavBar
+* CartWidget
+* ItemListContainer
+* ItemList
+* ItemDetailContainer
+* ItemDetail
+    - ItemQuantySelector
+    - Descripction
+    - AddItemButton
+* Checkout
+    -Brief (Detalle de compra)
+
+----
+## Titulo de mi Ecommerce: La previa
+
+* Gif donde se muestra como funciona:
+
+
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

@@ -6,7 +6,8 @@ import {doc, getDoc, getFirestore} from 'firebase/firestore'
 
 const ItemDetailContainer = () => {
   const {id} =useParams();
-  const [item, setItem] = useState(null);
+  const [item, setItem] = useState([]);
+
   useEffect(() => {
     const db = getFirestore()
     const oneItem = doc(db,'products',`${id}`)
@@ -22,10 +23,7 @@ const ItemDetailContainer = () => {
 
 return (
   <div>
-    Producto:{item.title}
-    Precio:{item.price}
-    { Object.getOwnPropertyNames(item).length && <ItemDetail item={item}/>}
-
+    <ItemDetail item={item}/>
   </div>
 
 )

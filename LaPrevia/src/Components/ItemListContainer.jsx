@@ -3,37 +3,49 @@ import {useEffect,useState} from 'react';
 import {useParams} from 'react-router-dom';
 import ItemList from './ItemList';
 import {Box, Center} from '@chakra-ui/react';
-import {collection, getDocs, getFirestore} from 'firebase/firestore'
+import {collection, getDocs, getFirestore,query,where} from 'firebase/firestore'
 
 
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
   const { categoryid } = useParams();
+  console.log(categoryid);
   
   useEffect(() => {
     const db = getFirestore()
 
     const itemsCollection = collection(db, "products")
-    getDocs(itemsCollection).then((snapshot) => {
-      const docs =snapshot.docs.map((doc) => doc.data())
-      console.log(docs);
-      setItems(docs)
-      })
-  }, []);
+
+    if (categoryid == undefined){
+      getDocs(itemsCollection).then((snapshot) => {
+        const items =snapshot.docs.map((doc) => ({
+          ...doc.data(),
+          id:doc.id,
+        }));
+       
+        setItems(items);
+      });
+    } else {
+      const itemsCollection = query(
+        collection(db, "products"),
+        where ("category","==",categoryid));
+
+        getDocs(itemsCollection).then((snapshot) => {
+        const items =snapshot.docs.map((doc) => ({
+          ...doc.data(),
+          id:doc.id,
+        }));
+       
+        setItems(items);
+
+    });
+  }
+
+  }, [categoryid]);
 
   return (
-
-    <div>
-      
-      {items.length ?
-       
-        <ItemList items={items}/>:
-        <span> Loading </span>
-       
-      }
-    </div>
-
-  );
+      <ItemList items={items}/>
+  )
 }
 export default ItemListContainer
