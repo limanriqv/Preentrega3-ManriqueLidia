@@ -12,7 +12,7 @@ dist
 dist-ssr
 *.local
 
-# en breve lo agrego  /.env
+.env
 
 # Editor directories and files
 .vscode/*
